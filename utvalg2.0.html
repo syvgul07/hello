@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sweet Delights</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
+
+        #toppfelt{
+            width: 100vw; /*vw = viewport widht dvs 100vw = 100% av sidebredde*/
+            height: 150px;
+            background-color: rgb(249, 179, 180);
+            display: flex;
+            flex-direction: row;
+
+        }
+
+        #linkfelt{
+            width: 100vw;
+            height: 70px;
+            background-color:  rgb(29, 167, 176);
+
+
+        }
+
+        #hovedfelt{
+            width: 80vw;
+            height:110vh;
+            background-color: rgb(255, 255, 255);
+            margin: auto;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            align-items: center;
+
+        }
+ 
+        .hoveddiver{
+            width: 30%;
+            height: 35%;
+            background-color: rgb(29, 167, 176);
+            border-radius: 30px;
+            box-shadow: 10px 10px 15px rgb(83, 82, 82);
+        }
+
+     
+        
+
+        .hoveddiver p{
+            font-family: "Arial";
+            font-size: large;
+            padding: 12px;
+            color: black;
+        }
+
+        .hoveddiver h1{
+            font-family: "Arial";
+            font-size: x-large;
+            padding: 12px;
+        }
+
+        .hoveddiver a{
+            font-family: "Arial";
+            font-size: large;
+            color: black;
+            text-decoration: none;
+            padding: 10px;
+            
+        }
+
+        .hoveddiver a:hover{
+            text-decoration: underline;
+        }
+
+            
+        
+        .toppdiv{
+            height: 150px;
+            width: 150px;
+         
+
+
+        }
+
+        #vtf{
+            flex-grow: 3;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #mtf{
+          
+            flex-grow: 25;
+            color: rgb(255, 255, 255);
+            font-family: century 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 70px;
+            font-weight: bold;
+            text-shadow: 5px 2px 2px rgb(29, 167, 176);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+         
+        
+  
+        
+        body{
+            background-image: url(images/bakgrunn.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+
+        table{
+            border-collapse: collapse;
+            border-bottom: 2px solid rgb(29, 167, 176);
+        }
+
+        th,td{
+            border: 1px;
+            padding: 8px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: large;
+            color: rgb(249, 179, 180);
+        }
+        thead>tr{
+            background-color: rgb(29, 167, 176);
+            color: #f6f7fa;
+        }
+        tbody>tr:nth-child(odd){
+            background-color: #f6f7fa;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div id="toppfelt">
+        <div class="toppdiv" id="vtf">
+            <img src="images/logo.jpg" alt="" width="150px">
+        </div>
+        <div class="toppdiv" id="mtf">  
+            <p>Utvalg</p>
+        </div>
+        <div class="toppdiv" id="htf">&#9776;
+            <img src="" alt="" width="120px">
+        </div>
+
+    </div>
+    <div id="linkfelt"></div>
+    <div id="hovedfelt">
+        <table>
+            <thead>
+                <tr>
+                    <th>Navn:</th>
+                    <th>Bilde:</th>
+                    <th>Pris:</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Delights Spesial</td>
+                    <td><img src="images/speisal.jpg" width="100px"></td>
+                    <td>29kr</td>
+                </tr>
+                <tr>
+                    <td>Sjokolade Delux</td>
+                    <td><img src="images/sjokolade delux.png" width="110px"></td>
+                    <td>40kr</td>
+                </tr>
+                <tr>
+                    <td>Karamel Drøm</td>
+                    <td><img src="images/karamel.avif" width="100px" alt=""></td>
+                    <td>45kr</td>
+                </tr>
+                <tr>
+                    <td>CookieCake</td>
+                    <td><img src="images/kake.avif" width="100px"></td>
+                    <td>75kr</td>
+                </tr>
+            </tbody>      
+        </table>
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<head>
+    <style>
+
+
+html, body {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+  }
+  body {
+    display: grid;
+
+  }
+  #hoved {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    gap: 5px;
+    background-color: #c6c6c6;
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    row-gap: 30px;
+    grid-template-areas: "t t t t t t t t t t" 
+                         "v v . m . .  . h h h"
+                         ". . . . n .  . h h h"
+                         ". . . . n .  . h h h"
+                         ;
+  }
+  #hoved > div {
+    background-color: #aac9c6;
+    border: 1px solid black;
+  }
+  .topp    { grid-area : t; }
+  .venstre { grid-area : v; }
+  .hoyre   { grid-area : h; }
+  .midt   { grid-area : m; }
+  .nede   { grid-area : n; }
+  
+
+  
+
+</style>
+</head>
+
+<body>
+    <div id="hoved">
+        <div class="topp"> topp 
+
+        </div>
+        <div class="venstre"> venstre 
+
+        </div>
+        <div class="hoyre"> høyre 
+
+        </div>
+        <div class="midt"> midt
+
+        </div>
+        <div class="nede"> nede
+
+        </div>
+      </div>
+</body>

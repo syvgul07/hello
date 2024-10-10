@@ -1,0 +1,138 @@
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="widht=device-width, initial-scale=1.0">
+        <title>Sweet Delights</title>
+        <style media="screen">
+            *{
+                padding: 0px;
+                margin: 0px;
+                font-family: "Century Gothic";
+             }
+             html{
+                height: 100vh;
+             }
+             .nav{
+                position: fixed;
+                bottom: 0px;
+                background-color: rgba(0, 0, 0, 0.269);
+                width: 100vw;
+                height: 50px;
+                padding-top: 10px;
+                text-align: center;
+                z-index: 1;
+             }
+             .nav a{
+                font-size: 25px;
+                text-decoration: none;
+                color: white;
+                padding-left: 20px;
+                padding-right: 20px;
+             }
+             .nav a:hover{
+                text-decoration: underline;
+             }
+             .bakgrunn1, .bakgrunn2, .bakgrunn3{
+                background-repeat: no-repeat;
+                background-size: cover;
+            
+                display: flex;
+                justify-content: center;
+                align-items: center;
+               
+             }
+             .bakgrunn1{
+                background-image: url(images/ccbbcfaa-e5c4-49ca-a698-0b42a4d98ed2.webp);
+                min-height: 100vh;
+                background-attachment: scroll;
+             }
+
+             .bakgrunn2{
+                background-image: url(images/OIP.jpg);
+                min-height: 90vh;
+                background-attachment: fixed; 
+             }
+
+             .bakgrunn3{
+                background-image: url(images/bakgrunn.png);
+                min-height: 80vh;
+                background-attachment: fixed; 
+             }
+
+             .txt1{
+
+                font-size: 50px;
+                letter-spacing: 20px;
+                font-weight: bold;
+                color:  #ffffff;
+             }
+             .txtboks1{
+                padding: 20px 10vw 20px 10vw;
+             }
+             .txtboks1 h3{
+                text-align: center;
+                font-size: 40px;
+             }
+             .txtboks1 p{
+                font-size: 20px;
+
+
+             }
+        </style>
+    </head>
+    <body>
+        <div class="bakgrunn1">
+            <div class="boks1">
+                <span class="txt1">Sweet Delights</span>
+            </div>
+        </div>
+<div class="txtboks1">
+    <h3>Om oss</h3><br>
+    <p>Hos Sweet Delights er vi stolte av å tilby cookies som ikke bare smaker fantastisk, 
+        men også gir en følelse av hjemmelaget kjærlighet i hver bit. 
+        Våre cookies er laget med de fineste ingrediensene, 
+        nøye utvalgt for å sikre den beste smaken og teksturen.
+        Prosessen vi bruker for å lage våre deilige cookies er en nøye balansert 
+        kombinasjon av tradisjonelle teknikker og moderne innovasjon.
+    </p>
+</div>
+<div class="bakgrunn2">
+    <div class="boks1">
+        <span class="txt1"></span>
+    </div>
+</div>
+<div class="txtboks1" style="background-color:  rgb(255, 255, 255);">
+    <h3>Bærekraft</h3><br>
+    <p>Hos Sweet Delights er vi dedikert til å skape deilige cookies samtidig som vi tar vare på planeten vår. 
+        Vi forstår viktigheten av bærekraft og har implementert flere tiltak for å sikre at 
+        vår virksomhet har en positiv innvirkning på miljøet. De viktigste områdene vi 
+        fokuserer på er bærekraftige ingredienser, miljøvennlig emballasje, reduksjon av matavfall og energieffektivitet.
+    </p>
+</div>
+</div>
+<div class="bakgrunn3">
+    <div class="boks1">
+        <img src="images/logo.jpg" alt="">
+    </div>
+</div>
+
+
+<div class="nav">
+    <a href="#">HOME</a>
+    <a href="#">CONTACT</a>
+    <a href="#">MEMBER</a>
+</div>
+
+        <script type="text/javascript">
+            var bilde = document.querySelector(".bakgrunn1");
+
+            window.addEventListener("scroll", reduserFart)
+
+            function reduserFart(){
+                var slep = window.pageYOffset;
+                bilde.style.backgroundPositionY = slep*0.7 +"px";
+            }
+
+        </script>
+    </body>
+</html>
